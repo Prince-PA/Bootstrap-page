@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LG VP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      .carousel-item img, .side-media { height: 380px; object-fit: cover; width: 100%; }
+      .card-img-top { height: 140px; object-fit: cover; }
+      @media (max-width: 576px) {
+        .carousel-item img, .side-media { height: 240px; }
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .carousel-item img, .side-media { height:250px; object-fit: contain; width: 100%; }
+.card-img-top { height:100px; object-fit:auto; }
+@media (max-width: 576px) {
+  .carousel-item img, .side-media { height: 100px; }
+}
+    </style>
+
+    <!-- 1. NAVBAR: logo + MyAccount, FAQ, Products, Services, Request a Quote -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <div class="container">
+        
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWEsAQBJZt3vranfFF4D9GEmNQ77oBSxy_dsq_XLNFMuD9TlQhJ9FTBAJ&s=10" alt="PP" width="36" height="36" class="me-2">
+PP
+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">MyAccount</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          </ul>
+          <a class="btn btn-success" href="#">Request a Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-4">
+
+      <!-- 2. CAROUSEL (left) + IMAGE / VIDEO (right) -->
+      <div class="row g-2">
+        <div class="col-md-8">
+          <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <!-- Replace each src with your own image, e.g. images/slide1.jpg -->
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img alt="6 ADM CPU"; src="https://5.imimg.com/data5/SELLER/Default/2024/3/405943068/NR/IN/RC/63754340/computer-gaming-cabinet.jpg">
+                <div class="carousel-caption d-none d-md-block"><h5 class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">6 ADM CPU</h5></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img alt="16 Fan ADM" src="https://5.imimg.com/data5/SELLER/Default/2024/2/394821353/JT/NB/BS/5560131/gaming-pc.jpg">
+                <div class="carousel-caption d-none d-md-block"><h5 class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">16 Fan ADM</h5></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img alt="18  ADM" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBGQBFj0tTGi1ZZW9i_roR0QML9KftbUv9_8eyg6h4T_F58WsODvGv5NE&s=10">
+                <div class="carousel-caption d-none d-md-block"><h5 class="bg-dark bg-opacity-50 d-inline-block px-3 py-1 rounded">18  ADM</h5></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <!-- Image or video: use ONE of these. For a video, use the <video> line instead of the <img> line. -->
+          <img class="side-media rounded" alt="Featured" src="https://www.pcworld.com/wp-content/uploads/2025/04/pcw08_Asus-Gaming-PC.jpg?quality=50&strip=all&w=1024">
+          <!-- <video class="side-media rounded" controls poster="images/poster.jpg"><source src="videos/intro.mp4" type="video/mp4"></video> -->
+        </div>
+      </div>
+
+      <!-- 3. FIVE SERVICE CARDS (image + title) -->
+      <h2 id="services" class="h4 mt-5 mb-3">Our Services</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3">
+        <div class="col"><div class="card h-100">
+          <img class="card-img-top" alt="Service 1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J8EDGsqxeAME7LxeldTY9ZRKbXOnRdcgyC_YwKRsw&s=10">
+          <div class="card-body text-center"><h3 class="card-title h6 mb-0">RTX For gaming PC</h3></div>
+        </div></div>
+        <div class="col"><div class="card h-100">
+          <img class="card-img-top" alt="Service 2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDGvNvpqFg8ZrwfAv1bfQgficK83Si2G7cCGfiwU_p7O-O7QniGvBvrSgGE4dZ9PTvrst8gJhmimhvwR4CMp4ZsJvVKu6JTsgOjb2gRShMj5_7X2WY8_wQ">
+          <div class="card-body text-center"><h3 class="card-title h6 mb-0">Cabinet for PC</h3></div>
+        </div></div>
+        <div class="col"><div class="card h-100">
+          <img class="card-img-top" alt="Service 3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfzsQOaogywzo9kL1qxUMQt6qPBae6S-UmtmA11bNYUowMNDvqBprj_ak&s=10">
+          <div class="card-body text-center"><h3 class="card-title h6 mb-0">Desktop</h3></div>
+        </div></div>
+        <div class="col"><div class="card h-100">
+          <img class="card-img-top" alt="Service 4" src="https://consistent.in/wp-content/uploads/2026/05/WhatsApp_Image_2025-07-29_at_10.45.52_AM.webp">
+          <div class="card-body text-center"><h3 class="card-title h6 mb-0">Mouse</h3></div>
+        </div></div>
+        <div class="col"><div class="card h-100">
+          <img class="card-img-top" alt="Service 5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lZNVDM-HI__czbbVyzSeeWn6njiQtlmbAH3Jg3iyZmbWymFa1mEmZgZU&s=10">
+          <div class="card-body text-center"><h3 class="card-title h6 mb-0">Key board</h3></div>
+        </div></div>
+      </div>
+
+      <!-- 4. THREE LISTS: products | services | cities served -->
+      <div class="row g-4 mt-4">
+        <div id="products" class="col-md-4">
+          <h2 class="h5">Products</h2>
+          <ul class="list-unstyled">
+            <li>ROG_STRIX-RTX3050 </li>
+            <li>DUAL RTX3050</li>
+            <li>RTX 3050 Gaming X 8G</li>
+            <li>RTX 4050 ventus 2X</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h5">Services</h2>
+          <ul class="list-unstyled">
+            <li>Installation</li>
+            <li>Repair</li>
+            <li>Maintenance</li>
+            <li>Consultation</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h5">Cities we served</h2>
+          <ul class="list-unstyled">
+            <li>Bhopal</li>
+            <li>Indore</li>
+            <li>Jabalpur</li>
+            <li>Gwalior</li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- 6. FOOTER: copyright icon + FAQ link -->
+    <footer class="bg-dark text-light py-3">
+      <div class="container text-center">
+        <span>&copy; 2026 PP</span>
+        <span class="mx-2">|</span>
+        <a id="faq" class="link-light" href="#faq">FAQ</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
